@@ -1,18 +1,49 @@
+// ===== Language Switcher =====
+let currentLang = 'en';
+
+function setLang(lang) {
+    currentLang = lang;
+    
+    // Update buttons
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btn-fr').classList.toggle('active', lang === 'fr');
+    
+    // Update all elements with data-en and data-fr
+    document.querySelectorAll('[data-en][data-fr]').forEach(el => {
+        el.textContent = el.getAttribute('data-' + lang);
+    });
+    
+    // Update typing texts
+    typingTexts = lang === 'en' ? textsEN : textsFR;
+    textIndex = 0;
+    charIndex = 0;
+    isDeleting = false;
+    typingElement.textContent = '';
+}
 
 // ===== Typing Animation =====
-const texts = [
+const textsEN = [
     "Building the web, one pixel at a time",
     "Dark mode enthusiast",
     "From Boumerdès, Algeria",
     "Learning & building every day"
 ];
+
+const textsFR = [
+    "Construire le web, un pixel à la fois",
+    "Amateur du mode sombre",
+    "De Boumerdès, Algérie",
+    "Apprendre & construire chaque jour"
+];
+
+let typingTexts = textsEN;
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 const typingElement = document.getElementById('typing');
 
 function type() {
-    const currentText = texts[textIndex];
+    const currentText = typingTexts[textIndex];
     
     if (isDeleting) {
         typingElement.textContent = currentText.substring(0, charIndex - 1);
@@ -29,7 +60,7 @@ function type() {
         isDeleting = true;
     } else if (isDeleting && charIndex === 0) {
         isDeleting = false;
-        textIndex = (textIndex + 1) % texts.length;
+        textIndex = (textIndex + 1) % typingTexts.length;
         typeSpeed = 400;
     }
 
