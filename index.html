@@ -98,41 +98,284 @@
         </div>
     </section>
 
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- ═══════════════ PROJECTS SECTION - START ═════════════════════ -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- 
+        ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+        ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+        ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+        ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+        ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+        ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+
+        كيفاش تزيد مشروع جديد:
+        1. انسخ كود الـ project-card كامل
+        2. لصقو قبل closing tag تاع projects-grid
+        3. بدل كلش (صورة، عنوان، وصف، روابط، tags)
+    -->
     <section class="section" id="projects">
         <h2 class="section-title"><i class="fas fa-rocket"></i> <span data-en="Projects" data-fr="Projets">Projects</span></h2>
+
         <div class="projects-grid">
+
+            <!-- ═══════ PROJECT 1 ═══════ -->
+            <!-- 
+                📸 الصورة: حط الصورة تاع المشروع في dossier "images/"
+                   و بدل "project1.jpg" باسم الصورة تاعك
+
+                📝 العنوان: اكتب اسم المشروع تاعك
+
+                📄 الوصف: اكتب وصف قصير (1-2 سطور)
+
+                🏷️ Tags: بدل التقنيات (HTML, CSS, JS...)
+
+                🔗 Live: رابط Netlify تاع المشروع
+                💻 Code: رابط GitHub repo تاع المشروع
+            -->
             <div class="project-card">
-                <div class="project-status"><i class="fas fa-code"></i></div>
-                <div class="project-text" data-en="Portfolio Website" data-fr="Site Portfolio">Portfolio Website</div>
-                <p style="color:#666;margin-top:10px;font-size:0.9rem;" data-en="Personal portfolio with 3D effects" data-fr="Portfolio personnel avec effets 3D">Personal portfolio with 3D effects</p>
+                <div class="project-image-wrapper">
+                    <!-- ═══ بدل "project1.jpg" باسم الصورة تاعك ═══ -->
+                    <img src="images/project1.jpg" alt="Project 1" class="project-img" onerror="this.src='https://via.placeholder.com/400x250/1a1a1a/f0a500?text=Project+1'">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <i class="fas fa-eye"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <!-- ═══ بدل العنوان ═══ -->
+                    <h3 class="project-title" data-en="Project One" data-fr="Projet Un">Project One</h3>
+
+                    <!-- ═══ بدل الوصف ═══ -->
+                    <p class="project-desc" data-en="A modern web application built with clean code and responsive design." data-fr="Une application web moderne avec du code propre et un design responsive.">A modern web application built with clean code and responsive design.</p>
+
+                    <!-- ═══ بدل التقنيات ═══ -->
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+
+                    <div class="project-links">
+                        <!-- ═══ بدل الروابط ═══ -->
+                        <a href="https://your-project1.netlify.app" target="_blank" class="project-btn project-btn-live">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-en="Live Site" data-fr="Voir le Site">Live Site</span>
+                        </a>
+                        <a href="https://github.com/nadirsalaheddine/project1" target="_blank" class="project-btn project-btn-code">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <!-- ═══════ PROJECT 2 ═══════ -->
             <div class="project-card">
-                <div class="project-status"><i class="fas fa-shopping-bag"></i></div>
-                <div class="project-text" data-en="E-commerce UI" data-fr="UI E-commerce">E-commerce UI</div>
-                <p style="color:#666;margin-top:10px;font-size:0.9rem;" data-en="Modern shopping interface design" data-fr="Design d'interface moderne">Modern shopping interface design</p>
+                <div class="project-image-wrapper">
+                    <img src="images/project2.jpg" alt="Project 2" class="project-img" onerror="this.src='https://via.placeholder.com/400x250/1a1a1a/f0a500?text=Project+2'">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <i class="fas fa-eye"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title" data-en="Project Two" data-fr="Projet Deux">Project Two</h3>
+                    <p class="project-desc" data-en="An interactive dashboard with data visualization and smooth animations." data-fr="Un tableau de bord interactif avec visualisation de données et animations fluides.">An interactive dashboard with data visualization and smooth animations.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-project2.netlify.app" target="_blank" class="project-btn project-btn-live">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-en="Live Site" data-fr="Voir le Site">Live Site</span>
+                        </a>
+                        <a href="https://github.com/nadirsalaheddine/project2" target="_blank" class="project-btn project-btn-code">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <!-- ═══════ PROJECT 3 ═══════ -->
             <div class="project-card">
-                <div class="project-status"><i class="fas fa-mobile-alt"></i></div>
-                <div class="project-text" data-en="Mobile App Design" data-fr="Design App Mobile">Mobile App Design</div>
-                <p style="color:#666;margin-top:10px;font-size:0.9rem;" data-en="Responsive mobile-first layouts" data-fr="Layouts responsive mobile-first">Responsive mobile-first layouts</p>
+                <div class="project-image-wrapper">
+                    <img src="images/project3.jpg" alt="Project 3" class="project-img" onerror="this.src='https://via.placeholder.com/400x250/1a1a1a/f0a500?text=Project+3'">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <i class="fas fa-eye"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title" data-en="Project Three" data-fr="Projet Trois">Project Three</h3>
+                    <p class="project-desc" data-en="A landing page with 3D effects and creative animations." data-fr="Une page d'atterrissage avec effets 3D et animations créatives.">A landing page with 3D effects and creative animations.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">GSAP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-project3.netlify.app" target="_blank" class="project-btn project-btn-live">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-en="Live Site" data-fr="Voir le Site">Live Site</span>
+                        </a>
+                        <a href="https://github.com/nadirsalaheddine/project3" target="_blank" class="project-btn project-btn-code">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <!-- ═══════ PROJECT 4 ═══════ -->
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/project4.jpg" alt="Project 4" class="project-img" onerror="this.src='https://via.placeholder.com/400x250/1a1a1a/f0a500?text=Project+4'">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <i class="fas fa-eye"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title" data-en="Project Four" data-fr="Projet Quatre">Project Four</h3>
+                    <p class="project-desc" data-en="A responsive e-commerce interface with modern UI patterns." data-fr="Une interface e-commerce responsive avec des patterns UI modernes.">A responsive e-commerce interface with modern UI patterns.</p>
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Tailwind</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-project4.netlify.app" target="_blank" class="project-btn project-btn-live">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-en="Live Site" data-fr="Voir le Site">Live Site</span>
+                        </a>
+                        <a href="https://github.com/nadirsalaheddine/project4" target="_blank" class="project-btn project-btn-code">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ═══════ PROJECT 5 ═══════ -->
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/project5.jpg" alt="Project 5" class="project-img" onerror="this.src='https://via.placeholder.com/400x250/1a1a1a/f0a500?text=Project+5'">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <i class="fas fa-eye"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title" data-en="Project Five" data-fr="Projet Cinq">Project Five</h3>
+                    <p class="project-desc" data-en="A weather application with real-time data and beautiful visuals." data-fr="Une application météo avec données en temps réel et visuels magnifiques.">A weather application with real-time data and beautiful visuals.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-project5.netlify.app" target="_blank" class="project-btn project-btn-live">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-en="Live Site" data-fr="Voir le Site">Live Site</span>
+                        </a>
+                        <a href="https://github.com/nadirsalaheddine/project5" target="_blank" class="project-btn project-btn-code">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ═══════ PROJECT 6 ═══════ -->
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="images/project6.jpg" alt="Project 6" class="project-img" onerror="this.src='https://via.placeholder.com/400x250/1a1a1a/f0a500?text=Project+6'">
+                    <div class="project-overlay">
+                        <div class="project-overlay-content">
+                            <i class="fas fa-eye"></i>
+                            <span>View Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3 class="project-title" data-en="Project Six" data-fr="Projet Six">Project Six</h3>
+                    <p class="project-desc" data-en="A portfolio template with dark theme and gold accents." data-fr="Un template portfolio avec thème sombre et accents dorés.">A portfolio template with dark theme and gold accents.</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">Animation</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://your-project6.netlify.app" target="_blank" class="project-btn project-btn-live">
+                            <i class="fas fa-external-link-alt"></i>
+                            <span data-en="Live Site" data-fr="Voir le Site">Live Site</span>
+                        </a>
+                        <a href="https://github.com/nadirsalaheddine/project6" target="_blank" class="project-btn project-btn-code">
+                            <i class="fab fa-github"></i>
+                            <span>Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- ═══════════════ PROJECTS SECTION - END ═══════════════════════ -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
 
     <section class="section" id="contact">
-        <h2 class="section-title"><i class="fas fa-paper-plane"></i> <span data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</span></h2>
-        <div class="contact-container">
-            <a href="mailto:salah.abahri2010@gmail.com" class="contact-btn"><i class="fas fa-envelope"></i> <span data-en="Email" data-fr="Email">Email</span></a>
-            <a href="https://github.com/nadirsalaheddine" target="_blank" class="contact-btn"><i class="fab fa-github"></i> GitHub</a>
-            <a href="#" class="contact-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <h2 class="section-title"><i class="fas fa-paper-plane"></i> <span data-en="Get In Touch" data-fr="Contactez-moi">Get In Touch</
+span></h2>
+        <div
+class="contact-container">
+            <a
+href="mailto:salah.abahri2010@gmail
+.com" class="contact-btn"><i
+class="fas fa-envelope"></i> <span
+data-en="Email"
+data-fr="Email">Email</span></a>
+            <a
+href="https://github.com
+/nadirsalaheddine" target="_blank"
+class="contact-btn"><i class="fab
+fa-github"></i> GitHub</a>
+            <a href="#"
+class="contact-btn"><i class="fab
+fa-linkedin"></i> LinkedIn</a>
         </div>
-    </section>
+</section>
 
-    <footer class="footer">
-        <p class="footer-text"><span data-en="Made with" data-fr="Fait avec">Made with</span> <span class="footer-heart">❤</span> <span data-en="by Nadir Salaheddine" data-fr="par Nadir Salaheddine">by Nadir Salaheddine</span></p>
-        <p style="color:#555;font-size:0.85rem;">© 2026 <span data-en="All rights reserved" data-fr="Tous droits réservés">All rights reserved</span></p>
-    </footer>
+<footer class="footer">
+    <p class="footer-text"><span
+data-en="Made with" data-fr="Fait
+avec">Made with</span> <span
+class="footer-heart">❤️</span> <span
+data-en="by Nadir Salaheddine"
+data-fr="par Nadir Salaheddine">by
+Nadir Salaheddine</span></p>
+    <p
+style="color:#555;font-size:0.85rem;">
+© 2026 <span data-en="All rights
+reserved" data-fr="Tous droits
+réservés">All rights reserved</span></
+p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
