@@ -96,6 +96,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// ===== Projects Card Hover Effect (3D Tilt) =====
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        
+        const rotateX = (y - centerY) / 20;
+        const rotateY = (centerX - x) / 20;
+        
+        card.style.transform = `translateY(-12px) scale(1.02) perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+    });
+    
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+    });
+});
+
 // ===== Console Welcome =====
 console.log('%c🚀 Welcome to Nadir Salaheddine Portfolio!', 'color:#f0a500; font-size:16px; font-weight:bold;');
 console.log('%c📧 Contact: salah.abahri2010@gmail.com', 'color:#79c0ff; font-size:13px;');
+console.log('%c💻 Projects Section loaded with 6 cards!', 'color:#7ee787; font-size:13px;');
