@@ -782,3 +782,33 @@ body {
     .project-card:hover .project-img { transform: none; filter: brightness(0.9); }
     .project-card:hover .project-overlay { opacity: 0; }
 }
+/* حاوية الصورة لتأطيرها بشكل فخم */
+.project-img-container {
+    width: 100%;
+    height: 220px; /* ارتفاع مثالي ومتناسق */
+    overflow: hidden;
+    border-radius: 12px 12px 0 0; /* زوايا دائرية من الأعلى لتناسب شكل البطاقة */
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+/* سحر التناسق الذكي للصورة */
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* يخلي الصورة تتمدد بذكاء بلا ما تتشوه أو تتكسر */
+    object-position: top center; /* يركز على الجزء العلوي الجميل للموقع */
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); /* أنيمايشن ناعم */
+}
+
+/* تأثير حركي رهيب (Zoom) لما الزبون يمرر الماوس على البطاقة */
+.project-card:hover .project-img {
+    transform: scale(1.06); /* الصورة تكبر شوية بداخل الإطار بشكل فخم جداً */
+}
+
+/* تعديل ذكي لشاشات الهاتف الصغيرة */
+@media (max-width: 767px) {
+    .project-img-container {
+        height: 180px; /* تقليل الارتفاع قليلاً على الهاتف لتبدو مريحة للعين */
+    }
+}
