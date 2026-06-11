@@ -133,10 +133,150 @@
                 🔗 Live: رابط Netlify تاع المشروع
                 💻 Code: رابط GitHub repo تاع المشروع
             -->
+            
+# نكتب الـ index.html الجديد — Bella Vita Project Card محدّث
+
+index_html = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Nadir Salaheddine | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="bg-3d"></div>
+    <div class="shapes-3d">
+        <div class="shape"></div>
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <!-- Language Switcher -->
+    <div class="lang-switch">
+        <button onclick="setLang('en')" id="btn-en" class="lang-btn active">EN</button>
+        <span class="lang-sep">|</span>
+        <button onclick="setLang('fr')" id="btn-fr" class="lang-btn">FR</button>
+    </div>
+
+    <header class="header">
+        <h1 data-en="Nadir Salaheddine" data-fr="Nadir Salaheddine">Nadir Salaheddine</h1>
+        <p class="subtitle" data-en="Web Developer | Designer | Algeria" data-fr="Développeur Web | Designer | Algérie">Web Developer | Designer | Algeria</p>
+        <p class="typing" id="typing"></p>
+        <div class="scroll-3d"></div>
+    </header>
+
+    <section class="section" id="about">
+        <h2 class="section-title"><i class="fas fa-palette"></i> <span data-en="About Me" data-fr="À Propos">About Me</span></h2>
+        <div class="glass-card">
+            <div class="about-item">
+                <span class="label"><i class="fas fa-user"></i> <span data-en="Name:" data-fr="Nom :">Name:</span></span>
+                <span class="value">Nadir Salaheddine</span>
+            </div>
+            <div class="about-item">
+                <span class="label"><i class="fas fa-map-marker-alt"></i> <span data-en="Location:" data-fr="Lieu :">Location:</span></span>
+                <span class="value" data-en="Boumerdès, Algeria" data-fr="Boumerdès, Algérie">Boumerdès, Algeria</span>
+            </div>
+            <div class="about-item">
+                <span class="label"><i class="fas fa-briefcase"></i> <span data-en="Role:" data-fr="Rôle :">Role:</span></span>
+                <span class="value" data-en="Web Developer & Designer" data-fr="Développeur Web & Designer">Web Developer & Designer</span>
+            </div>
+            <div class="about-item">
+                <span class="label"><i class="fas fa-code"></i> <span data-en="Focus:" data-fr="Focus :">Focus:</span></span>
+                <span class="value" data-en="Frontend • UI/UX • Creative Design" data-fr="Frontend • UI/UX • Design Créatif">Frontend • UI/UX • Creative Design</span>
+            </div>
+            <div class="about-item">
+                <span class="label"><i class="fas fa-rocket"></i> <span data-en="Status:" data-fr="Statut :">Status:</span></span>
+                <span class="value" data-en="Learning & building, one project at a time" data-fr="Apprendre & construire, un projet à la fois">Learning & building, one project at a time</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="palette">
+        <h2 class="section-title"><i class="fas fa-leaf"></i> <span data-en="Design Palette" data-fr="Palette de Design">Design Palette</span></h2>
+        <div class="palette-grid">
+            <div class="season-card">
+                <div class="season-icon"><i class="fas fa-sun"></i></div>
+                <div class="season-name" data-en="Autumn" data-fr="Automne">Autumn</div>
+                <div class="color-box" style="background:#F0A500;" title="Warm Gold / Or Chaud"></div>
+                <div class="color-box" style="background:#C84B31;" title="Deep Orange / Orange Profond"></div>
+            </div>
+            <div class="season-card">
+                <div class="season-icon"><i class="fas fa-snowflake"></i></div>
+                <div class="season-name" data-en="Winter" data-fr="Hiver">Winter</div>
+                <div class="color-box" style="background:#0B192C;" title="Dark Blue / Bleu Foncé"></div>
+                <div class="color-box" style="background:#8B0000;" title="Cold Red / Rouge Froid"></div>
+            </div>
+            <div class="season-card">
+                <div class="season-icon"><i class="fas fa-seedling"></i></div>
+                <div class="season-name" data-en="Spring" data-fr="Printemps">Spring</div>
+                <div class="color-box" style="background:#556B2F;" title="Olive Green / Vert Olive"></div>
+                <div class="color-box" style="background:#D4AF37;" title="Soft Gold / Or Doux"></div>
+            </div>
+            <div class="season-card">
+                <div class="season-icon"><i class="fas fa-fire"></i></div>
+                <div class="season-name" data-en="Summer" data-fr="Été">Summer</div>
+                <div class="color-box" style="background:#FFD700;" title="Bright Gold / Or Brillant"></div>
+                <div class="color-box" style="background:#1B2838;" title="Deep Blue / Bleu Profond"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="tech">
+        <h2 class="section-title"><i class="fas fa-layer-group"></i> <span data-en="Tech Stack" data-fr="Technologies">Tech Stack</span></h2>
+        <div class="tech-container">
+            <div class="tech-item"><i class="fab fa-html5 tech-icon"></i><span class="tech-name">HTML5</span></div>
+            <div class="tech-item"><i class="fab fa-css3-alt tech-icon"></i><span class="tech-name">CSS3</span></div>
+            <div class="tech-item"><i class="fab fa-js tech-icon"></i><span class="tech-name">JavaScript</span></div>
+            <div class="tech-item"><i class="fab fa-react tech-icon"></i><span class="tech-name">React</span></div>
+            <div class="tech-item"><i class="fab fa-git-alt tech-icon"></i><span class="tech-name">Git</span></div>
+            <div class="tech-item"><i class="fab fa-figma tech-icon"></i><span class="tech-name">Figma</span></div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- ═══════════════ PROJECTS SECTION - START ═════════════════════ -->
+    <!-- ═══════════════════════════════════════════════════════════════ -->
+    <!-- 
+        ██████╗ ██████╗  ██████╗      ██╗███████╗ ██████╗████████╗███████╗
+        ██╔══██╗██╔══██╗██╔═══██╗     ██║██╔════╝██╔════╝╚══██╔══╝██╔════╝
+        ██████╔╝██████╔╝██║   ██║     ██║█████╗  ██║        ██║   ███████╗
+        ██╔═══╝ ██╔══██╗██║   ██║██   ██║██╔══╝  ██║        ██║   ╚════██║
+        ██║     ██║  ██║╚██████╔╝╚█████╔╝███████╗╚██████╗   ██║   ███████║
+        ╚═╝     ╚═╝  ╚═╝ ╚═════╝  ╚════╝ ╚══════╝ ╚═════╝   ╚═╝   ╚══════╝
+        
+        كيفاش تزيد مشروع جديد:
+        1. انسخ كود الـ project-card كامل
+        2. لصقو قبل closing tag تاع projects-grid
+        3. بدل كلش (صورة، عنوان، وصف، روابط، tags)
+    -->
+    <section class="section" id="projects">
+        <h2 class="section-title"><i class="fas fa-rocket"></i> <span data-en="Projects" data-fr="Projets">Projects</span></h2>
+        
+        <div class="projects-grid">
+            
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- ═══════ PROJECT 1: BELLA VITA PREMIUM ═══════════════════════ -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- 
+                📸 الصورة: حط الصورة في dossier "images/"
+                   اسم الملف: bella-vita.jpg (ولا bella-vita.png)
+                   
+                📝 العنوان: Bella Vita Premium
+                
+                📄 الوصف: Italian summer skincare e-commerce
+                
+                🏷️ Tags: HTML5, CSS3, JavaScript, E-commerce
+                
+                🔗 Live: https://bellavita-premium.netlify.app
+                💻 Code: https://github.com/nadirsalaheddine/bellavita.git
+            -->
             <div class="project-card">
                 <div class="project-image-wrapper">
-                    <!-- ═══ بدل "project1.jpg" باسم الصورة تاعك ═══ -->
-                    <img src="images/project1.jpg" alt="Project 1" class="project-img" onerror="this.src='https://via.placeholder.com/400x250/1a1a1a/f0a500?text=Project+1'">
+                    <!-- ═══ بدل "bella-vita.jpg" باسم الصورة تاعك ═══ -->
+                    <img src="images/bella-vita.jpg" alt="Bella Vita Premium" class="project-img" onerror="this.src='https://via.placeholder.com/400x250/1a1a1a/f0a500?text=Bella+Vita'">
                     <div class="project-overlay">
                         <div class="project-overlay-content">
                             <i class="fas fa-eye"></i>
@@ -145,25 +285,27 @@
                     </div>
                 </div>
                 <div class="project-body">
-                    <!-- ═══ بدل العنوان ═══ -->
-                    <h3 class="project-title" data-en="Project One" data-fr="Projet Un">Project One</h3>
-
-                    <!-- ═══ بدل الوصف ═══ -->
-                    <p class="project-desc" data-en="A modern web application built with clean code and responsive design." data-fr="Une application web moderne avec du code propre et un design responsive.">A modern web application built with clean code and responsive design.</p>
-
-                    <!-- ═══ بدل التقنيات ═══ -->
+                    <!-- ═══ العنوان ═══ -->
+                    <h3 class="project-title" data-en="Bella Vita Premium" data-fr="Bella Vita Premium">Bella Vita Premium</h3>
+                    
+                    <!-- ═══ الوصف ═══ -->
+                    <p class="project-desc" data-en="Italian summer skincare e-commerce with multi-language support, shopping cart, and premium UI design." data-fr="E-commerce de skincare estivale italienne avec support multi-langue, panier d'achat et design UI premium.">Italian summer skincare e-commerce with multi-language support, shopping cart, and premium UI design.</p>
+                    
+                    <!-- ═══ التقنيات ═══ -->
                     <div class="project-tags">
                         <span class="tag">HTML5</span>
                         <span class="tag">CSS3</span>
                         <span class="tag">JavaScript</span>
+                        <span class="tag">E-commerce</span>
                     </div>
-
+                    
                     <div class="project-links">
-                        <!-- ═══ بدل الروابط ═══ -->
+                        <!-- ═══ رابط الموقع الحي ═══ -->
                         <a href="https://bellavita-premium.netlify.app" target="_blank" class="project-btn project-btn-live">
                             <i class="fas fa-external-link-alt"></i>
                             <span data-en="Live Site" data-fr="Voir le Site">Live Site</span>
                         </a>
+                        <!-- ═══ رابط GitHub ═══ -->
                         <a href="https://github.com/nadirsalaheddine/bellavita.git" target="_blank" class="project-btn project-btn-code">
                             <i class="fab fa-github"></i>
                             <span>Code</span>
@@ -171,7 +313,12 @@
                     </div>
                 </div>
             </div>
-
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            <!-- ═══════ END PROJECT 1 ═══════════════════════════════════════ -->
+            <!-- ═══════════════════════════════════════════════════════════════ -->
+            
+          
+                  
             <!-- ═══════ PROJECT 2 ═══════ -->
             <div class="project-card">
                 <div class="project-image-wrapper">
